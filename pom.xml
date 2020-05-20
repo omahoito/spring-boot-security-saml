@@ -93,6 +93,23 @@
                     <goals>deploy</goals>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>5.3.0</version>
+                <configuration>
+                    <cveUrlBase>http://localhost/nist/nvdcve-1.1-%d.json.gz</cveUrlBase>
+                    <cveUrlModified>http://localhost/nist/nvdcve-1.1-modified.json.gz</cveUrlModified>
+                    <suppressionFile>owasp-dependency-suppression.xml</suppressionFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
