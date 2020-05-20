@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.ulisesbocchio</groupId>
+    <groupId>fi.oda</groupId>
     <artifactId>spring-boot-security-saml-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.18-SNAPSHOT</version>
+    <version>1.18</version>
     <name>Spring Boot Security SAML Parent</name>
     <description>Parent POM for project that eases Integration between Spring Boot and spring-security-saml through
         properties and adapters
