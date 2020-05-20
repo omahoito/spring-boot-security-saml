@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.ulisesbocchio</groupId>
+        <groupId>fi.oda</groupId>
         <artifactId>spring-boot-security-saml-parent</artifactId>
-        <version>1.18-SNAPSHOT</version>
+        <version>1.18</version>
     </parent>
 
     <artifactId>spring-boot-security-saml</artifactId>
@@ -35,7 +35,7 @@
         <dependency>
             <groupId>org.springframework.security.extensions</groupId>
             <artifactId>spring-security-saml2-core</artifactId>
-            <version>1.0.9.RELEASE</version>
+            <version>1.0.10.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
