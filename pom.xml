@@ -144,6 +144,9 @@
     <profiles>
         <profile>
             <id>release</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -188,6 +191,17 @@
                                 <configuration>
                                     <additionalparam>-Xdoclint:none</additionalparam>
                                 </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <!-- explicitly define maven-deploy-plugin after other to force exec order -->
+                        <artifactId>maven-deploy-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>deploy</id>
+                                <phase>deploy</phase>
+                                <goals><goal>deploy</goal></goals>
                             </execution>
                         </executions>
                     </plugin>
