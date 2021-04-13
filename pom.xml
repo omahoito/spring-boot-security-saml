@@ -5,7 +5,7 @@
     <groupId>fi.oda</groupId>
     <artifactId>spring-boot-security-saml-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.25</version>
+    <version>1.26</version>
     <name>Spring Boot Security SAML Parent</name>
     <description>Parent POM for project that eases Integration between Spring Boot and spring-security-saml through
         properties and adapters
