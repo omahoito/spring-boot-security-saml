@@ -5,7 +5,7 @@
     <groupId>fi.oda</groupId>
     <artifactId>spring-boot-security-saml-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.24</version>
+    <version>1.25</version>
     <name>Spring Boot Security SAML Parent</name>
     <description>Parent POM for project that eases Integration between Spring Boot and spring-security-saml through
         properties and adapters
@@ -219,6 +219,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
+            </dependency>
+            <!-- bump because of vulnerabilities -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-ext-jdk15on</artifactId>
+                <version>1.68</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>2.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
