@@ -8,5 +8,10 @@
             <username>${env.UPLOAD_USERNAME}</username>
             <password>${env.UPLOAD_PASSWORD}</password>
         </server>
+        <server>
+            <id>github-maven</id>
+            <username>${env.GITHUB_PACKAGES_DEPLOY_USERNAME}</username>
+            <password>${env.GITHUB_PACKAGES_DEPLOY_TOKEN}</password>
+        </server>
     </servers>
 </settings>
